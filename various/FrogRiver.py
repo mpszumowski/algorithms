@@ -1,5 +1,5 @@
 """
-Find missing element in array from 1 to N. Copyright by Codility
+Find earliest moment when the path is ready. Copyright by Codility
 https://app.codility.com/programmers/lessons/4-counting_elements/
 """
 
