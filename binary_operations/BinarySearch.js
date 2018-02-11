@@ -1,0 +1,25 @@
+var doSearch = function(array, targetValue) {
+	var min = 0;
+	var max = array.length - 1;
+    var guess;
+    
+    while (1 + min !== max) {
+        guess = Math.round((min + max) / 2);
+        if (array[guess] === targetValue) {
+            return guess;
+        }
+        else if (array[guess] < targetValue) {
+            min = guess;
+        }
+        else {
+            max = guess;
+        }
+    }
+
+	return -1;
+};
+
+var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 
+		41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+
+var result = doSearch(primes, 73);
